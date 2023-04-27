@@ -1,2 +1,2 @@
 # aoy0
-Scripts for the group aoy0 'experiences.'
+This repository contains the group **aoy0** from Roblox. Web going public soon.
