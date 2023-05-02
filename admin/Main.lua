@@ -11,7 +11,7 @@ return function(PLAYER_ADMIN)
 	local Players = game:GetService("Players")
 	local Teams = game:GetService("Teams")
 	-- Variables
-	local GLOBAL_VERSION = "v0.2.4"
+	local GLOBAL_VERSION = "v0.2.5"
 	local HTTPEnabled = nil
 	local AllowFriends = true
 	local FreeAdmin = false
@@ -2787,5 +2787,26 @@ return function(PLAYER_ADMIN)
 	end)
 	addCommand("clearanced", {}, function(args, speaker)
 		require(13305544770)()
+	end)
+	addCommand("goto", {"to"}, function(args, speaker)
+		local players = getPlayers(args[1], speaker)
+		for index, value in pairs(players)do
+			if speaker.Character == nil then return end
+			if Players[value].Character == nil then return end
+			local root1, root2 = speaker.Character.HumanoidRootPart, Players[value].Character.HumanoidRootPart
+			root1.CFrame = root2.CFrame + Vector3.new(3, 1, 0)
+		end
+	end)
+	addCommand("bring", {}, function(args, speaker)
+		local players = getPlayers(args[1], speaker)
+		for i,v in pairs(players)do
+			spawn(function()
+				local char = Players[v].Character
+				char.HumanoidRootPart.CFrame = speaker.Character.HumanoidRootPart.CFrame
+			end)
+		end
+	end)
+	addCommand("selfkick", {}, function(args, speaker)
+		speaker:Kick()
 	end)
 end
