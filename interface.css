@@ -1,0 +1,152 @@
+/* interface.css */
+
+.buttonos button:hover {
+	-webkit-mask-image: linear-gradient(50deg, rgba(0, 0, 0, .9) 30%, #000 50%, rgba(0, 0, 0, .9) 70%);
+	-webkit-mask-size: 200%;
+	animation: shine 2s infinite;
+	opacity: 0.99;
+}
+
+.shimmer:hover {
+	-webkit-mask-image: linear-gradient(50deg, rgba(0, 0, 0, .9) 30%, #000 50%, rgba(0, 0, 0, .9) 70%);
+	-webkit-mask-size: 200%;
+	animation: shine 2s infinite;
+	opacity: 0.99;
+}
+
+.imageContainer:hover {
+	-webkit-mask-image: linear-gradient(50deg, rgba(0, 0, 0, .9) 30%, #000 50%, rgba(0, 0, 0, .9) 70%);
+	-webkit-mask-size: 200%;
+	animation: shine 2s infinite;
+	opacity: 0.99;
+}
+
+.optionImage img:hover {
+	-webkit-mask-image: linear-gradient(50deg, rgba(0, 0, 0, .9) 30%, #000 50%, rgba(0, 0, 0, .9) 70%);
+	-webkit-mask-size: 200%;
+	animation: shine 2s infinite;
+	opacity: 0.99;
+}
+
+.imageContainer {
+	filter: blur(0.1px);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.optionImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.optionos {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+ }
+ 
+ ::-webkit-scrollbar-track {
+  border: 1px solid rgb(77, 77, 77);
+  border-radius: 9px;
+ }
+ 
+ ::-webkit-scrollbar-thumb {
+  background: rgb(66, 66, 66);
+  border-radius: 8px;
+ }
+ 
+ ::-webkit-scrollbar:hover {
+  background: rgb(33, 33, 33);
+ }
+ 
+ a {
+    color: rgb(1, 158, 255);
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    margin: 0 0 24px;
+    text-align: center;
+}
+
+a:hover {
+    color: rgb(1, 200, 255);
+}
+
+h1 {
+    color: #ffffff;
+    font-family: 'Raleway',sans-serif;
+    font-size: 62px;
+    font-weight: 800;
+    line-height: 72px;
+    margin: 0 0 24px;
+    text-align: center;
+}
+
+h2 {
+    color: #ffffff;
+    font-family: 'Raleway',sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 36px;
+    margin: 0 0 24px;
+    text-align: center;
+}
+
+h3 {
+    color: #ffffff;
+    font-family: 'Raleway',sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 20px;
+    margin: 0 0 24px;
+    text-align: center;
+}
+
+p {
+    color: #f8f8f8;
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    margin: 0 0 24px;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(36,36,36);
+}
+
+.ui-corner-tl {
+    border-top-left-radius: 8px;
+}
+
+.ui-corner-tr {
+    border-top-right-radius: 8px;
+}
+
+.ui-corner-bl {
+    border-bottom-left-radius: 8px;
+}
+
+.ui-corner-br {
+    border-bottom-right-radius: 8px;
+}
+
+@-webkit-keyframes shine {
+	from {
+		-webkit-mask-position: 150%;
+	}
+
+	to {
+		-webkit-mask-position: -50%;
+	}
+}
