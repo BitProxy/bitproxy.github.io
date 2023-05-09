@@ -10,7 +10,7 @@ fetch('https://bitproxy.github.io/data.json')
   .then(response => response.json())
   .then(data => {
     // Setting response data
-    JSON_DATA = JSON.parse(data)
+    JSON_DATA = data
   })
   .catch(error => {
     // Handling error requests
