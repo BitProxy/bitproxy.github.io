@@ -13,7 +13,7 @@ function openrblxprofile(profile) {
 
 // HTTP Request 'fetch'
 
-fetch('http://bitproxy.github.io/data.json')
+fetch('https://bitproxy.github.io/data.json')
   .then(response => response.json())
   .then(data => {
     // Setting response data
