@@ -1,12 +1,5 @@
 /* interface.css */
 
-.buttonos button:hover {
-	-webkit-mask-image: linear-gradient(50deg, rgba(0, 0, 0, .9) 30%, #000 50%, rgba(0, 0, 0, .9) 70%);
-	-webkit-mask-size: 200%;
-	animation: shine 2s infinite;
-	opacity: 0.99;
-}
-
 .shimmer:hover {
 	-webkit-mask-image: linear-gradient(50deg, rgba(0, 0, 0, .9) 30%, #000 50%, rgba(0, 0, 0, .9) 70%);
 	-webkit-mask-size: 200%;
@@ -40,13 +33,6 @@
     height: 100%;
     object-fit: cover;
     position: absolute;
-}
-
-.optionos {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
-    grid-gap: 15px;
 }
 
 ::-webkit-scrollbar {
@@ -121,8 +107,59 @@ p {
     text-align: center;
 }
 
+.oktext {
+    color: rgb(158, 158, 158);
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    margin: 0 0 24px;
+    text-align: center;
+}
+
 body {
     background-color: rgb(36,36,36);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+table th {
+    background-color: rgb(175, 75, 175);
+    color: #f8f8f8;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+table tr:nth-child(even) td {
+    background-color: rgb(66, 64, 64);
+}
+    
+table tr:hover td {
+    background-color: rgb(50, 50, 50);
+}
+
+table td {
+    background-color: rgb(66, 66, 66);
+    padding: 10px;
+    border-bottom: 1px solid rgb(26, 26, 26);
+    font-weight: bold;
 }
 
 .ui-corner-tl {
@@ -139,6 +176,53 @@ body {
 
 .ui-corner-br {
     border-bottom-right-radius: 8px;
+}
+
+.button-cool {
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #27ae60;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 13px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.button-cool:hover {
+  background-color: #1e8449;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+.button-cool:active {
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+.button-cool:hover {
+  box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
 }
 
 @-webkit-keyframes shine {
