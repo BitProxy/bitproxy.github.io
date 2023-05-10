@@ -6,7 +6,7 @@ function getrblxPro() {
 
 // HTTP Request 'fetch'
 
-fetch('https://bitproxy.github.io/data.json')
+fetch('https://proxy.bitx96.com/data.json')
   .then(response => response.json())
   .then(data => {
     // Setting response data
