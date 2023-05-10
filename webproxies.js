@@ -9,7 +9,7 @@ function openproxy(name) {
     }
 }
 
-fetch('https://bitproxy.github.io/webproxies.json')
+fetch('https://proxy.bitx96.com/webproxies.json')
   .then(response => response.json())
   .then(data => {
     // Setting response data
