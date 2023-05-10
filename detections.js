@@ -1,5 +1,5 @@
 function checkurl(URL) {
-    if (URL == "https://bitproxy.github.io/404.html") {
+    if (URL == "https://proxy.bitx96.com/404") {
         return "This url exists, used for non-existance files."
     }
     return "File cannot be found."
