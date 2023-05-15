@@ -4,6 +4,8 @@ function openproxy(name) {
     if (Proxies[name]) {
         if (Proxies[name].Status == "Slow") {
             alert("This website may be running slow. Keep in mind this website was last checked on " + Proxies[name].Updated)
+        } else if (Proxies[name].Status == "Error") {
+            return alert("This website is down or something went wrong.")
         }
         window.open(Proxies[name].Url)
     }
